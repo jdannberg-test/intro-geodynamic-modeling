@@ -13,7 +13,7 @@ echo "# Viscosity (Pa s) DeltaT (K) velocity (m/yr)" >> $filename
 echo "----Running models now----"
 for viscosity in "1e24" "3.3e24" "1e25" "3.3e25" "1e26" "3.3e26" "1e27"
 do
-  for DeltaT in "10" "30" "100" "300" "1000" "3000" "10000"
+  for DeltaT in "10" "30" "100" "300" "1000" "3000" "10000" "30000" "100000"
   do  
     echo "Running model with a viscosity of $viscosity Pa s and a temperature jump of $DeltaT:"
     cp onset-convection.prm temp.prm
